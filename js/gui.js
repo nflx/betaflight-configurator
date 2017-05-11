@@ -38,6 +38,7 @@ var GUI_control = function () {
         'pid_tuning',
         'ports',
         'receiver',
+        'script',
         'sensors',
         'servos',
     ];

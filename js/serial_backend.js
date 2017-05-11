@@ -346,10 +346,12 @@ function onClosed(result) {
 }
 
 function read_serial(info) {
-    if (!CONFIGURATOR.cliActive) {
+    if (!CONFIGURATOR.cliActive && !CONFIGURATOR.scriptActive) {
         MSP.read(info);
     } else if (CONFIGURATOR.cliActive) {
         TABS.cli.read(info);
+    } else if (CONFIGURATOR.scriptActive) {
+        TABS.script.read(info);
     }
 }
 
@@ -477,7 +479,7 @@ function update_live_status() {
        display: 'inline-block'
     });
     
-    if (GUI.active_tab != 'cli') {
+    if (GUI.active_tab != 'cli' && GUI.active_tab != 'script') {
         MSP.send_message(MSPCodes.MSP_BOXNAMES, false, false);
         if (semver.gte(CONFIG.apiVersion, "1.32.0"))
             MSP.send_message(MSPCodes.MSP_STATUS_EX, false, false);

@@ -82,6 +82,9 @@
     "tabPorts": {
         "message": "Ports"
     },
+    "tabScript": {
+        "message": "Script"
+    },
     "tabPidTuning": {
         "message": "PID Tuning"
     },
@@ -120,6 +123,9 @@
     },
     "tabCLI": {
         "message": "CLI"
+    },
+    "tabSCRIPT": {
+        "message": "SCRIPT"
     },
     "tabLogging": {
         "message": "Tethered Logging"

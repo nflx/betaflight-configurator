@@ -9,6 +9,8 @@ var CONFIGURATOR = {
     
     'connectionValid': false,
     'connectionValidCliOnly': false,
+    'scriptActive': false,
+    'scriptValid': false,
     'cliActive': false,
     'cliValid': false
 };

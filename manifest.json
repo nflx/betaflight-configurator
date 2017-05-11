@@ -19,7 +19,7 @@
     },
 
     "sandbox": {
-    "pages": ["tabs/map.html"]
+    "pages": ["tabs/map.html","tabs/script.html","script/version.html"]
     },
          
     "permissions": [

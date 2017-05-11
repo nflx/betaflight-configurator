@@ -21,6 +21,7 @@
     <link type="text/css" rel="stylesheet" href="./tabs/led_strip.css" media="all"/>
     <link type="text/css" rel="stylesheet" href="./tabs/sensors.css" media="all"/>
     <link type="text/css" rel="stylesheet" href="./tabs/cli.css" media="all"/>
+    <link type="text/css" rel="stylesheet" href="./tabs/script.css" media="all"/>
     <link type="text/css" rel="stylesheet" href="./tabs/logging.css" media="all"/>
     <link type="text/css" rel="stylesheet" href="./tabs/onboard_logging.css" media="all"/>
     <link type="text/css" rel="stylesheet" href="./tabs/firmware_flasher.css" media="all"/>
@@ -50,6 +51,8 @@
     <script type="text/javascript" src="./js/libraries/bluebird.min.js"></script>
     <script type="text/javascript" src="./js/libraries/jquery.ba-throttle-debounce.min.js"></script>
     <script type="text/javascript" src="./js/libraries/inflection.min.js"></script>
+    <script type="text/javascript" src="./js/libraries/handlebars-runtime.js"></script>
+    <script type="text/javascript" src="./script/version.js"></script>
     <script type="text/javascript" src="./js/injected_methods.js"></script>
     <script type="text/javascript" src="./js/port_handler.js"></script>
     <script type="text/javascript" src="./js/port_usage.js"></script>
@@ -86,6 +89,7 @@
     <script type="text/javascript" src="./tabs/led_strip.js"></script>
     <script type="text/javascript" src="./tabs/sensors.js"></script>
     <script type="text/javascript" src="./tabs/cli.js"></script>
+    <script type="text/javascript" src="./tabs/script.js"></script>
     <script type="text/javascript" src="./tabs/logging.js"></script>
     <script type="text/javascript" src="./tabs/onboard_logging.js"></script>
     <script type="text/javascript" src="./tabs/firmware_flasher.js"></script>
@@ -249,6 +253,10 @@
                                            title="Tethered Logging"></a></li>
                 <li class="tab_onboard_logging"><a href="#" i18n="tabOnboardLogging" class="tabicon ic_data"
                                                    title="Onboard Logging"></a></li>
+            </ul>
+            <ul class="mode-connected-cli">
+                <li class="tab_cli"><a href="#" i18n="tabCLI" class="tabicon ic_cli" title="CLI"></a></li>
+                <li class="tab_script"><a href="#" i18n="tabSCRIPT" class="tabicon ic_cli" title="SCRIPT"></a></li>
                 <!-- spare icons
                 <li class=""><a href="#"class="tabicon ic_mission">Mission (spare icon)</a></li>
                 <li class=""><a href="#"class="tabicon ic_advanced">Advanced (spare icon)</a></li>
